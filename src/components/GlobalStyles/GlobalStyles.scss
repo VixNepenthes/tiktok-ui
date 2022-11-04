@@ -4,6 +4,7 @@
     --black-color: #000;
     --white-color: #fff;
     --text-color: #161823;
+    --font: ProximaNova, ibm-plex-sans, sans-serif;
     // DefaultLayout
     --default-layout-header-height: 60px;
     --default-layout-width: 1150px;
@@ -18,8 +19,21 @@
 html {
     font-size: 62.5%;
 }
+
+// Font Embeded
+@font-face {
+    font-family: ProximaNova;
+    src: url('/assets/font/ProximaNova-Semibold.woff2');
+    font-weight: 600;
+}
+@font-face {
+    font-family: ProximaNova;
+    src: url('/assets/font/Proxima-Nova-Regular.woff2');
+    font-weight: 400;
+}
+
 body {
-    font-family: ibm-plex-sans, sans-serif;
+    font-family: var(--font);
     font-size: 1.6rem;
     line-height: 1.5;
     text-rendering: optimizeSpeed;
